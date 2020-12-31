@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function callMyNameBaby() {
+  var name = arguments.callee.toString().match(/function ([^\(]+)/)[1];
+  alert(name);
+} callMyNameBaby();
+</script>
+
+</body>
+</html>
